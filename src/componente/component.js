@@ -1,5 +1,5 @@
 import React from "react";
-
+import ReactDOM from "react-dom";
 class Component extends React.Component {
   render() {
     return (
@@ -9,4 +9,9 @@ class Component extends React.Component {
     );
   }
 }
-export default Component;
+ReactDOM.render(
+  <React.StrictMode>
+    <Component/>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
