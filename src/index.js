@@ -10,7 +10,7 @@
 //import './comunicacion/padre-hijo';
 //import './componente/component';
 //import './componente/printHola';
-import './comunicacion/hijo-padre';  
+//import './comunicacion/hijo-padre';  
     
   
  
