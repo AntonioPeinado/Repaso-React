@@ -9,8 +9,8 @@
 //import './comunicacion/events';
 //import './comunicacion/padre-hijo';
 //import './componente/component';
-import './componente/printHola';
-  
+//import './componente/printHola';
+import './comunicacion/hijo-padre';  
     
   
  
