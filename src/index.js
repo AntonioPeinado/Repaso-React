@@ -16,5 +16,6 @@
 //import './comunicacion/mediator'; 
 //import './life/lifeCicle';
 //import './life/controlleInput';
+import './fetch/fetch';
 
  

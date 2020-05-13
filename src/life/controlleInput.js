@@ -6,7 +6,7 @@ class ControlledInput extends React.Component {
     super(props);
     this.state = {
       foo: "Nombre:",
-      check: true,
+      check: true
     };
   }
   _updateFoo = (ev) => {
