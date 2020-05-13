@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 function Hijo(props) {
     return <h1>{props.count} </h1> 
 }
-class Padre extends React.Component{
+class Padre extends React.Component {
     constructor(props){
         super(props);
         this.state={

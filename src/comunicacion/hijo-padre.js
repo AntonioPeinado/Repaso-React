@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Padre(props) {
-  return <h1>{props.count} </h1>;
+function Hijo(props) {
+  return <button onClick={props.update}>Click</button>;
 }
-class Hijo extends React.Component {
+class Padre extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,14 +13,14 @@ class Hijo extends React.Component {
   }
   _update() {
     this.setState({
-      count: this.state.count + 1,
+      count: this.state.count + 1
     });
   }
   render() {
     return (
       <React.Fragment>
-        <button onClick={() => this._update()}>Click</button>
-        <Padre count={this.state.count} />
+        <Hijo update={this._update.bind(this)} />
+        <h1>{this.state.count}</h1>
       </React.Fragment>
     );
   }
@@ -28,10 +28,9 @@ class Hijo extends React.Component {
 
 
 
-
 ReactDOM.render(
   <React.StrictMode>
-    <Hijo></Hijo>
+    <Padre></Padre>
   </React.StrictMode>,
   document.getElementById("root")
 );

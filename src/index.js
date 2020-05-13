@@ -11,6 +11,10 @@
 //import './componente/component';
 //import './componente/printHola';
 //import './comunicacion/hijo-padre';  
-    
-  
+//import './life/life'; 
+//import './ref/ref' ; 
+//import './comunicacion/mediator'; 
+//import './life/lifeCicle';
+//import './life/controlleInput';
+
  
