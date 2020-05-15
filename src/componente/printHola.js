@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom"; 
 //pinta un componente
-function PrintHola () {
+ function PrintHola () {
    
     return <h1>Hello!</h1>
 
