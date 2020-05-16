@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 
 class InitialState extends React.Component{
     constructor(props){
@@ -16,9 +16,3 @@ class InitialState extends React.Component{
 }
 export default InitialState;
 
-ReactDOM.render(
-  <React.StrictMode>
-    <InitialState></InitialState>
-  </React.StrictMode>,
-  document.getElementById("root")
-);

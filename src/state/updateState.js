@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 
 
 class UpdateStateWithClass extends React.Component{
@@ -23,12 +23,6 @@ class UpdateStateWithClass extends React.Component{
         )
     }
 }
+export default UpdateStateWithClass;
 
 
-
-ReactDOM.render(
-  <React.StrictMode>
-    <UpdateStateWithClass/>
-  </React.StrictMode>,
-  document.getElementById("root")
-);

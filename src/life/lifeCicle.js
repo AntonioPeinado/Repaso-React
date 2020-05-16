@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-function Foo (){
+
+export function Foo (){
   throw new Error('error');
   
 }
-class BarreraDeErrores extends React.Component{
+export default class BarreraDeErrores extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -25,7 +25,7 @@ render(){
 }
 }
 
-class LifeCycle extends React.Componet {
+export class LifeCycle extends React.Componet {
 
   constructor(props){
     super(props);
@@ -70,12 +70,7 @@ class LifeCycle extends React.Componet {
           
   }
 }
-ReactDOM.render(
-  <React.StrictMode>
-    <LifeCycle name='Antonio' />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+
 /*
 setTimeout(() => {
   ReactDOM.unmountComponentAtNode(

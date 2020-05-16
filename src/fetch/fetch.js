@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 
 const url = "https://thesimpsonsquoteapi.glitch.me/quotes?" ; 
-class ApiFetch extends React.Component {
+export default class ApiFetch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,9 +47,3 @@ class ApiFetch extends React.Component {
   }
 }
   
-ReactDOM.render(
-  <React.StrictMode>
-    <ApiFetch character='Homer Sinpsom'/>
-  </React.StrictMode>,
-  document.getElementById("root")
-);

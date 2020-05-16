@@ -1,20 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-function Display (props){
+
+export function Display (props){
     return (
     <span>{props.count}</span>
     )
 }
 
-function Updater (props){
+export function Updater (props){
     return(
     <button onClick={props.update}>Click!</button>
     
         )
 }
 
-class Counter extends React.Component {
+export default class Counter extends React.Component {
     constructor(props){
         super(props);
         this.state={
@@ -37,9 +37,3 @@ render(){
 } 
 }   
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Counter></Counter>
-  </React.StrictMode>,
-  document.getElementById("root")
-);

@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 
 
-class Ref extends React.Component {
+
+export default class Ref extends React.Component {
   constructor(props) {
     super(props);
     this._inputRef= React.createRef(); 
@@ -23,9 +23,4 @@ render(){
 }
 }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Ref/>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+

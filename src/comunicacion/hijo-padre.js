@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-function Hijo(props) {
+
+export function Hijo(props) {
   return <button onClick={props.update}>Click</button>;
 }
-class Padre extends React.Component {
+export default class Padre extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,9 +28,3 @@ class Padre extends React.Component {
 
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Padre></Padre>
-  </React.StrictMode>,
-  document.getElementById("root")
-);

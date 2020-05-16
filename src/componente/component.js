@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom"; 
-class Component extends React.Component {
+
+export default class Component extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -9,10 +9,4 @@ class Component extends React.Component {
     );
   }
 }
- ReactDOM.render(
-   <React.StrictMode>
-     <Component />
-   </React.StrictMode>,
-   document.getElementById("root")
- );
-
+ 
