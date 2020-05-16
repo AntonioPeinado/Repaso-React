@@ -16,6 +16,9 @@ function App(){
             <nav>
               <ul>
                 <li>
+                  <Link to="/alert/alert">alert</Link>
+                </li>
+                <li>
                   <Link to="/componente/component">component</Link>
                 </li>
                 <li>
@@ -32,6 +35,39 @@ function App(){
                 </li>
                 <li>
                   <Link to="/life/controlleInput">controlleInput</Link>
+                </li>
+                {/* <li>
+                  <Link to="/life/lifeCicle">lifeCicle</Link>
+               </li>*/}
+                <li>
+                  <Link to="/comunicacion/mediator">mediator</Link>
+                </li>
+                <li>
+                  <Link to="/comunicacion/padre-hijo">padre-hijo</Link>
+                </li>
+                <li>
+                  <Link to="/condicional/condicional">condicional</Link>
+                </li>
+                <li>
+                  <Link to="/condicional/listas">listas</Link>
+                </li>
+                <li>
+                  <Link to="/props/horizontal">horizontal</Link>
+                </li>
+                <li>
+                  <Link to="/props/layout">layout</Link>
+                </li>
+                <li>
+                  <Link to="/props/saludo">saludo</Link>
+                </li>
+                <li>
+                  <Link to="/ref/ref">ref</Link>
+                </li>
+                <li>
+                  <Link to="/state/state-initial">state-initial</Link>
+                </li>
+                <li>
+                  <Link to="/state/updateState">updateState</Link>
                 </li>
               </ul>
             </nav>
@@ -60,7 +96,9 @@ function App(){
                   <Route
                     path="/comunicacion/events"
                     exact
-                    component={React.lazy(() => import("./comunicacion/events"))}
+                    component={React.lazy(() =>
+                      import("./comunicacion/events")
+                    )}
                   ></Route>
                   <Route
                     path="/comunicacion/hijo-padre"
@@ -75,6 +113,76 @@ function App(){
                     component={React.lazy(() =>
                       import("./life/controlleInput")
                     )}
+                  ></Route>
+                  {/*<Route
+                    path="/life/lifeCicle"
+                    exact
+                    component={React.lazy(() =>
+                      import("./life/lifeCicle")
+                    )}
+                    ></Route>*/}
+                  <Route
+                    path="/alert/alert"
+                    exact
+                    component={React.lazy(() => import("./alert/alert"))}
+                  ></Route>
+                  <Route
+                    path="/comunicacion/mediator"
+                    exact
+                    component={React.lazy(() =>
+                      import("./comunicacion/mediator")
+                    )}
+                  ></Route>
+                  <Route
+                    path="/comunicacion/padre-hijo"
+                    exact
+                    component={React.lazy(() =>
+                      import("./comunicacion/padre-hijo")
+                    )}
+                  ></Route>
+                  <Route
+                    path="/condicional/condicional"
+                    exact
+                    component={React.lazy(() =>
+                      import("./condicional/condicional")
+                    )}
+                  ></Route>
+                  <Route
+                    path="/condicional/listas"
+                    exact
+                    component={React.lazy(() => import("./condicional/listas"))}
+                  ></Route>
+                  <Route
+                    path="/props/horizontal"
+                    exact
+                    component={React.lazy(() => import("./props/horizontal"))}
+                  ></Route>
+                  <Route
+                    path="/props/layout"
+                    exact
+                    component={React.lazy(() => import("./props/layout"))}
+                  ></Route>
+                  <Route
+                    path="/props/saludo"
+                    exact
+                    component={React.lazy(() => import("./props/saludo"))}
+                  ></Route>
+                  <Route
+                    path="/ref/ref"
+                    exact
+                    component={React.lazy(() => import("./ref/ref"))}
+                  ></Route>
+                  <Route
+                    path="/state/state-initial"
+                    exact
+                    component={React.lazy(() =>
+                      import("./state/state-initial")
+                    )}
+                  ></Route>
+                  <Route
+                    path="/state/updateState"
+                    exact
+                    component={React.lazy(() => import("./state/updateState"))}
                   ></Route>
                 </Switch>
               </React.Suspense>
